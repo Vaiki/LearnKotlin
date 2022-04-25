@@ -1,6 +1,6 @@
 package lab1
 
-class User(private val name: String, private val secondName: String, var age: Int) {
+class User(private val name: String, private val secondName: String, private var age: Int) {
     companion object {
         private val users = mutableListOf<User>()
         fun addUsers(user: User) {
