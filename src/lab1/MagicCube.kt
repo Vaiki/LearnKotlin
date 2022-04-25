@@ -17,4 +17,5 @@ class MagicCube {
 fun main() {
     println("В чем вопрос?")
     MagicCube.answer(readLine()!!)
+
 }

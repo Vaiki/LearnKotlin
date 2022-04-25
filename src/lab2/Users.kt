@@ -10,8 +10,8 @@ class User(private val name: String, private val secondName: String, var age: In
 
         fun getSortedByName() = users.sortedBy { user -> user.name }
 
-        fun selectByAge(age: Int){
-            users.removeIf { user:User->user.age<age }
+        fun selectByAge(age: Int) {
+            users.removeIf { user: User -> user.age < age }
         }
 
 

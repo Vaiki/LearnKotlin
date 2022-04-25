@@ -1,4 +1,4 @@
-package lab2
+package lab2.cat_jump
 
 class Cat(
     val name: String,
@@ -9,17 +9,6 @@ class Cat(
     val jumpPower = (growth + length) * 3 - weight * 10
 }
 
-abstract class Furniture(
-    val height: Double,
-    val color: String,
-    val material: String,
-    val length: Double
-)
-
-class Table(height: Double, color: String, material: String, length: Double, val numOfLegs: Int) :
-    Furniture(height, color, material, length) {
-
-}
 
 fun main() {
     val cat = Cat("Barsik", 5.5, 18.0, 37.5)
@@ -28,8 +17,6 @@ fun main() {
     val table2 = Table(100.0, "black", "plastic", 100.0, 1)
     jumpingCat(cat, table)
     jumpingCat(cat2, table2)
-
-
 }
 
 fun jumpingCat(cat: Cat, table: Table) {
